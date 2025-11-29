@@ -13,5 +13,5 @@ q1: str = input("launch linutil? [y/N] \n")
 if q1.lower() == 'y':
     run("curl -fsSL https://christitus.com/linux | sh", shell=True, check=True)
 q2: str = input("launch hyprland? [Y/n] \n")
-if q2 != "n":
+if q2.lower() != "n":
     run("hyprland", shell=True, check=True)
