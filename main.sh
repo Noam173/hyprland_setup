@@ -9,7 +9,7 @@ files="$(find "$(dirname "$0")" -name 'setup*')"
 
 for script in $files;do
 
-python "$script"
+uv run "$script"
 
 done
 
