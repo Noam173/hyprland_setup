@@ -18,7 +18,7 @@ def main() -> None:
         run("curl -fsSL https://christitus.com/linux | sh", shell=True, check=True)
     q2: str = input("launch hyprland? [Y/n] \n")
     if q2.lower() != "n":
-        run("hyprland", shell=True, check=True)
+        run("cd $HOME && hyprland", shell=True, check=True)
 
 
 
