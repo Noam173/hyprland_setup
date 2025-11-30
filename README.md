@@ -4,13 +4,11 @@
 
 # run:
 
-cd $(find $HOME -name "hyprland")
+cd $(find $HOME -name "hyprland_setup")
 
-uvx pyinstaller hyprland_setup.py \
+uvx pyinstaller hyprland.py \
  --add-data "stuff:stuff" \
  --onefile \
  --distpath "$HOME"
 
-rm -rf build/ hyprland_setup.spec
-
-cd $HOME
+rm -rf build/ hyprland.spec
