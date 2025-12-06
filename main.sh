@@ -32,8 +32,11 @@ git clone https://github.com/noam173/zed
 
 
 git config --global credential.helper store
-echo "https://<username>:<token>@github.com" >> "$HOME/.git-credentials"
+if [[ ! -f "$HOME/.git-credentials" ]]; then
 
+echo "https://<username>:<token>@github.com" > "$HOME/.git-credentials"
+
+fi
 
 echo "the paru config was copied to $HOME/.config/paru/paru.conf, please install paru from linutil"
 echo "launch linutil? [y/N]"
