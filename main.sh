@@ -4,7 +4,9 @@ cwd="$PWD"
 
 neccesary() {
     sudo chown -R $USER:$USER ~/.config
-    paru -S nano uv waybar firefox --noconfirm
+    paru -S nano uv waybar wofi firefox --noconfirm
+    paru -S hyprland slurp grim wl-clipboard --noconfirm
+    paru -S kitty ttf-meslo-nerd --noconfirm
 
     paru -S pipewire-pulse pavucontrol --noconfirm
     sudo systemctl enable pipewire-pulse --now
