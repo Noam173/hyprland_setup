@@ -1,6 +1,5 @@
 from pathlib import Path
 from shutil import copy
-from subprocess import run
 
 
 def main() -> None:

@@ -5,7 +5,7 @@ cwd="$PWD"
 neccesary() {
     sudo chown -R $USER:$USER ~/.config
     paru -S nano uv waybar wofi firefox --noconfirm
-    paru -S hyprland slurp grim wl-clipboard --noconfirm
+    paru -S hyprland xdg-desktop-portal-hyprland slurp grim wl-clipboard --noconfirm
     paru -S kitty ttf-meslo-nerd --noconfirm
 
     paru -S pipewire-pulse pavucontrol --noconfirm
